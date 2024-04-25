@@ -1,0 +1,29 @@
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    border: 1px solid #D7DCDF;
+    border-radius: 8px;
+    padding: 20px 24px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid #40BCA3;
+}
+
+.input.error .input-field,
+.input.error .input-field:focus {
+    border: 1px solid #DC0000;
+}
+
+.error-text {
+    color: #DC0000;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 8px;
+}

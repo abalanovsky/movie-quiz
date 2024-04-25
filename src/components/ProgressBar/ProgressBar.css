@@ -1,0 +1,26 @@
+.progress-bar {
+    width: 528px;
+    height: 4px;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(270deg, #4AD6BB 0%, #38A58F 100%);
+    transition: width 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+    .progress-bar {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 429px) {
+    .progress-bar {
+        width: 327px;
+    }
+}

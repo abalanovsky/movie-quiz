@@ -1,0 +1,24 @@
+.app-container {
+    width: 528px;
+    text-align: center;
+    flex: 1;
+    padding-bottom: 40px;
+}
+
+.title-text {
+    text-align: left;
+    font-weight: 900;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .app-container {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 429px) {
+    .app-container {
+        width: 327px;
+    }
+}

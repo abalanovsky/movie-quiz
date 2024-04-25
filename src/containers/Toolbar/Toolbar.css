@@ -1,0 +1,28 @@
+.toolbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 528px;
+}
+
+.toolbar-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toolbar-percentage {
+    margin-right: 24px;
+}
+
+@media screen and (max-width: 767px) {
+    .toolbar-container {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 429px) {
+    .toolbar-container {
+        width: 327px;
+    }
+}
