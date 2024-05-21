@@ -9,6 +9,7 @@
     border-radius: 8px;
     cursor: pointer;
     margin-bottom: 24px;
+    position: relative;
 }
 
 .radio-item-content {
@@ -47,6 +48,12 @@
 
 .radio-item.checked .radio-item-circle img {
     display: block;
+}
+
+.radio-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 429px) {

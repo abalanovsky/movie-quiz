@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    & > div {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+}
+
+.movie-search-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .movie-search-title {

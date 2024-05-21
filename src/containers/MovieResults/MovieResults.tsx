@@ -43,7 +43,7 @@ const MovieResults = () => {
 
   return (
     <div className='movie-results-container'>
-      <div>
+      <div className='movie-results-block'>
         {isLoading ? (
           <div>
             <img src={loader} alt='Loading' width='64' />

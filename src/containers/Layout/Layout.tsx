@@ -11,14 +11,14 @@ const Layout = () => {
   const { currentStep } = useContext(MovieAppContext)
 
   return (
-    <>
+    <div className='layout'>
       <Header />
       <div className='app-container'>
         {currentStep === Steps.GENRE_SELECTION && <GenreSelection />}
         {currentStep === Steps.MOVIE_SEARCH && <MovieSearch />}
         {currentStep === Steps.MOVIE_RESULTS && <MovieResults />}
       </div>
-    </>
+    </div>
   )
 }
 

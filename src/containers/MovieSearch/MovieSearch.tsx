@@ -24,7 +24,7 @@ const MovieSearch = () => {
 
   return (
     <div className='movie-search-container'>
-      <div>
+      <div className='movie-search-block'>
         <h2 className='title-text movie-search-title'>Enter movie title</h2>
         <Input
           value={inputValue}

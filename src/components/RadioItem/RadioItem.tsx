@@ -7,18 +7,26 @@ interface RadioItemProps {
   icon: string
   onChange: (value: string) => void
   checked?: boolean
+  name: string
 }
+
 const RadioItem: FC<RadioItemProps> = ({
   value,
   icon,
   onChange,
-  checked = false
+  checked = false,
+  name
 }) => {
   return (
-    <div
-      className={`radio-item ${checked ? 'checked' : ''}`}
-      onClick={() => onChange(value)}
-    >
+    <label className={`radio-item ${checked ? 'checked' : ''}`}>
+      <input
+        type='radio'
+        value={value}
+        checked={checked}
+        onChange={() => onChange(value)}
+        name={name}
+        className='radio-input'
+      />
       <div className='radio-item-content'>
         <span className='radio-item-icon'>{icon}</span>
         <span>{value}</span>
@@ -26,7 +34,7 @@ const RadioItem: FC<RadioItemProps> = ({
       <div className='radio-item-circle'>
         {checked && <img src={RadioCheckedIcon} alt='Checked icon' />}
       </div>
-    </div>
+    </label>
   )
 }
 
